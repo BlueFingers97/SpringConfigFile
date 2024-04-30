@@ -5,25 +5,25 @@ management:
         include: '*'
   endpoint:
     health:
-      enabled: 'true'
+      enabled: true
       show-details: always
     beans:
-      enabled: 'true'
+      enabled: true
     info:
-      enabled: 'true'
+      enabled: true
     shutdown:
       enabled: true
   server:
     address: localhost
-    port: '19001'
+    port: 19001
 
 
 eureka:
   client:
-    register-with-eureka: 'true'
+    register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka
-    fetch-registry: 'true'
+    fetch-registry: true
 
 spring:
   application:
