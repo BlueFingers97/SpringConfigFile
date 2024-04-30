@@ -39,6 +39,10 @@ spring:
     url: jdbc:mariadb://localhost:3306/myDB
   application:
     name: USER-SERVICE
+  boot:
+    admin:
+      client: # Spring Boot Actuator UI Server
+        url: 'http://localhost: 18000'
 
 jwt:
   token:
